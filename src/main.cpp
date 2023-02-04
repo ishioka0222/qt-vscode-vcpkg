@@ -1,3 +1,11 @@
-#include <iostream>
+#include <QApplication>
 
-int main() { std::cout << "hello, world!" << std::endl; }
+#include "widget.h"
+
+int main(int argc, char *argv[]) {
+  QApplication a(argc, argv);
+
+  Widget w;
+  w.show();
+  return a.exec();
+}
